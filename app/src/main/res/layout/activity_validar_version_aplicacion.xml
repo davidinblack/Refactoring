@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNegro"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context="neto.com.mx.conteocedisciclicos.DescargaUltimaVersionDialog">
+
+    <LinearLayout
+        android:id="@+id/contenedorMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9" />
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:text="Verificando versión de aplicación..."
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco"
+            android:textSize="9sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedorDescargando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textMensajeDescarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descargando versión *.*.*   100.0"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco"
+            android:textSize="9sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarDesarga"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressTint="@android:color/holo_green_light" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAvisoFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No se podrá continuar usando la aplicación hasta que se haya instalado la nueva versión."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="9sp" />
+
+</LinearLayout>

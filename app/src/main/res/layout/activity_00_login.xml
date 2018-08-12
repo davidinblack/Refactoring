@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNetoLogin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fitsSystemWindows="true"
+    tools:context="neto.com.mx.conteocedisciclicos.LoginActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9" />
+
+    <GridLayout
+
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_gravity="center"
+        android:columnCount="1"
+        android:rowCount="4">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:paddingBottom="0dp"
+            android:src="@drawable/img_logo" />
+
+        <EditText
+            android:id="@+id/usuarioText"
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:height="40dp"
+            android:hint="Usuario"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/colorBlanco"
+            android:textColorHint="@color/colorBlanco"
+            android:textSize="15dp" />
+        <!-- android:text="685380" -->
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:height="40dp"
+            android:fontFamily="sans-serif"
+            android:hint="Contraseña"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:text=""
+            android:textColor="@color/colorBlanco"
+            android:textColorHint="@color/colorBlanco"
+            android:textSize="15dp" />
+        <!-- android:text="685380" -->
+        <Button
+            android:id="@+id/loginBoton"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:alpha="0"
+            android:background="@drawable/rounded_boton_generico"
+            android:inputType="number"
+            android:onClick="iniciaLogueo"
+            android:text="@string/loguin_entrar"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9" />
+
+
+</LinearLayout>

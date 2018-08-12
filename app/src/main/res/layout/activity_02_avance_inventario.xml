@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="neto.com.mx.conteocedisciclicos.AvanceInventarioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="10dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:columnCount="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="12/01/2018" />
+
+                    <TextClock
+                        android:id="@+id/textClock3"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:format12Hour="hh:mm"
+                        android:format24Hour="hh:mm"
+                        android:gravity="right"
+                        android:text="12:00" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtUsuarioNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="David Ramirez"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="394dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNombreTienda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CEDIS Chalco"
+                    android:textColor="@color/colorFuenteAzul"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Inventario: "
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtIdInventarioActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2018012654864"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorNegro"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarCombinado"
+                        style="@style/style_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="10"
+                        android:max="100"
+                        android:padding="5dp"
+                        android:progress="10"
+                        android:progressBackgroundTint="@android:color/darker_gray"
+                        android:secondaryProgress="50" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_row="1"
+                        android:background="@android:color/holo_blue_dark" />
+
+                    <TextView
+                        android:id="@+id/txtReserva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_row="1"
+                        android:text="Reserva"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtReservaPorcent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_row="1"
+                        android:paddingLeft="5dp"
+                        android:text="0%"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtReservaCantArt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_row="1"
+                        android:paddingLeft="5dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorNegro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="5"
+                        android:layout_row="1"
+                        android:paddingLeft="5dp"
+                        android:text="@string/articulos"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_row="2"
+                        android:background="@color/colorVino" />
+
+                    <TextView
+                        android:id="@+id/txtActivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_row="2"
+                        android:text="Activo"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtActivoPorcent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_row="2"
+                        android:paddingLeft="5dp"
+                        android:text="0%"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtActivoCantArt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_row="2"
+                        android:paddingLeft="5dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorNegro"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="5"
+                        android:layout_row="2"
+                        android:paddingLeft="5dp"
+                        android:text="@string/articulos"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/avance"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <FrameLayout
+                            android:layout_width="120dp"
+                            android:layout_height="120dp">
+
+                            <ProgressBar
+                                android:id="@+id/progresBarAvanceTotal"
+                                style="@style/style_progress_circular"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="0"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/txtProgresBarAvanceTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="0%"
+                                android:textColor="@color/colorNegro"
+                                android:textSize="24sp" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_span="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTotArticulos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="217"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorRojo"
+                            android:textSize="27sp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/articulos"
+                            android:textAlignment="textEnd"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txtTotCajas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2,170"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/colorRojo"
+                            android:textSize="27sp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="@string/cajas"
+                            android:textAlignment="textEnd"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="426dp">
+
+        <Button
+            android:id="@+id/btnReconteo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorFuenteAzul"
+            android:text="@string/re_conteo"
+            android:textColor="@color/colorBlanco"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnContar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorOliva"
+            android:textColor="@color/colorBlanco"
+            android:text="@string/contar"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

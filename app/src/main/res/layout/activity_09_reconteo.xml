@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context="neto.com.mx.conteocedis.ReconteoActivity">
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    android:layout_weight="0.9"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    tools:context="neto.com.mx.conteocedisciclicos.ReconteoActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/txtCantidadContada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="Cantidad contada"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btncantContada"
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle_shape_rojo"
+                android:backgroundTint="@color/colorVino"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNombreArticulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:background="@android:drawable/edit_text"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d0aa03"
+            android:text="Sólo el rubro marcado se actualizará"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlanco"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/linearActivo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@color/colorMoradoActivo"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxActivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorBlanco"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Activo"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtCantidadActivo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:background="@drawable/text_redondeado"
+                android:backgroundTint="@color/colorBlanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textCantActivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearReserva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="@color/colorAzulReserva"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBoxReserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:buttonTint="@color/colorBlanco"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Reserva"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlanco"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtCantidadReserva"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:background="@drawable/text_redondeado"
+                android:backgroundTint="@color/colorBlanco"
+                android:contentDescription="0"
+                android:ems="10"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="5dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/colorNegro"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textCantReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/colorBoton"
+                android:onClick="regresar"
+                android:text="@string/txt_btn_regresar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlanco"
+                android:textSize="24sp"></Button>
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/colorOliva"
+                android:onClick="actualizarReconteo"
+                android:text="@string/txt_btn_guardar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlanco"
+                android:textSize="24sp"
+                android:visibility="gone"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+    <!--</RelativeLayout>-->
+

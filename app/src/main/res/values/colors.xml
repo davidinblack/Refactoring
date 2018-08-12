@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorNeto">#FF8000</color>
+    <color name="colorBack">#dde7f9</color>
+    <color name="colorRojo">#ea2611</color>
+    <color name="colorVerde">#38a642</color>
+    <color name="colorRojoAlert">#f58175</color>
+    <color name="colorVerdeAlert">#98e89f</color>
+    <color name="colorAmarilloAlert">#F3C76F</color>
+    <color name="colorNegro">#000000</color>
+    <color name="colorBlanco">#ffffff</color>
+    <color name="colorBlancoTransparente">#baffffff</color>
+    <color name="colorBoton">#213054</color>
+    <color name="colorFuente">#606060</color>
+    <color name="colorFuenteActivo">#ff5000</color>
+    <color name="colorFuenteAzul">#004584</color>
+    <color name="colorFuenteGris">#cccccc</color>
+    <color name="colorBotonesContorno">#c2eff5</color>
+    <color name="colorBotonesContornoRojo">#fca692</color>
+    <color name="colorBotonesContornoVerde">#acf1ad</color>
+    <color name="colorBotonesContornoAmarillo">#f7f197</color>
+    <color name="colorBotonesContornoMorado">#e7c1fa</color>
+    <color name="colorBotonesContornoGris">#d2d2d2</color>
+    <color name="colorLineas">#EBF0F5</color>
+    <color name="colorBackNaranja">#FFE8DE</color>
+    <color name="colorNaranjaLoading">#f50005</color>
+    <color name="colorNetoLogin">#22324B</color>
+    <color name="colorBackVerifica">#f1fcf9</color>
+
+    <color name="colorVino">#b73e41</color>
+    <color name="colorOliva">#16a085</color>
+    <color name="colorAmarillo">#af8f18</color>
+
+    <color name="colorAzulReserva">#4086c2</color>
+    <color name="colorMoradoActivo">#7e418f</color>
+    <color name="moradoTodasZonas">#5b3cb7</color>
+    <color name="colorGrisTrasparente">#73a7a7a7</color>
+
+</resources>

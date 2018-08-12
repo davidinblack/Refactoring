@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Inventarios CICLICOS para CEDIS</string>
+    <string name="app_id">3</string>
+    <string name="app_pais_id">1</string>
+
+    <string name="finaliza_carga">Finalizar conteo</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="folio_pedido">Escanea el folio del pedido</string>
+    <string name="llave_sian">Escanea la llave</string>
+
+    <string name="tit_escanea">Escanea el código de barras del inventario a contar</string>
+    <string name="salirScaneo">Salir</string>
+    <string name="salir">salir</string>
+    <string name="Dialogo_OK">OK</string>
+    <!-- LOCAL <string name="EndpointRest">http://10.0.0.6:8080/WSMovilesNETO/servicio/genericos/consultaGenericaDinamica</string> -->
+    <!-- DESA <string name="EndpointRest">http://10.37.140.202:7777/WSMovilREST/servicio/genericos/consultaGenericaDinamica</string> -->
+    <!-- QA <string name="EndpointRest">http://10.81.12.46:7777/WSMovilREST/servicio/genericos/consultaGenericaDinamica</string> -->
+    <!-- PROD <string name="EndpointRest">http://10.81.12.203:8003/WSMovilREST/servicio/genericos/consultaGenericaDinamica</string> -->
+    <!--PRE QA <string name="EndpointRest">http://10.81.12.45:7777/WSMovilREST/servicio/genericos/consultaGenericaDinamica</string>-->
+    <string name="EndpointRest">http://10.81.12.45:7777/WSMovilREST/servicio/genericos/consultaGenericaDinamica</string>
+    <string name="loguin_entrar">Entrar</string>
+    <string name="request_sinrespuesta">No se obtubo respuesta.</string>
+    <string name="loguin_error_gen">Ocurrió un problema al crear las credenciales.</string>
+    <string name="tagLogueo">Logueo</string>
+    <string name="loguin_servicio_nodiponible">Servicio no disponible.</string>
+    <string name="contar">Contar</string>
+    <string name="re_conteo">Re conteo</string>
+    <string name="articulos">Artículos</string>
+    <string name="cajas">Cajas</string>
+    <string name="title_activity_ubicacion">Seleccione ubicación</string>
+    <string name="txt_btn_reserva">Reserva</string>
+    <string name="txt_btn_activo">Activo</string>
+
+    <string name="txt_btn_regresar">Regresar</string>
+    <string name="title_activity_selecciona_zona_">Selecciona una zona</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="selecciona_zona">Selecciona la zona a contar</string>
+    <string name="txt_todas_zonas">Todas las zonas</string>
+    <string name="title_activity_selecciona_ubicacion1">SeleccionaUbicacionActivity1</string>
+    <string name="avance">Avance</string>
+    <string name="tit_escanea_codbar">Escanea el código de barras del artículo</string>
+    <string name="zona">ZONA</string>
+    <string name="ultimo_conteo_guardado">Último conteo guardado</string>
+    <string name="cantidad_contada">Cantidad \ncontada</string>
+    <string name="txt_btn_guardar">Guardar</string>
+    <string name="error_gen_central">Se presentó un problema al procesar la solicitud</string>
+    <string name="error_gen_cliente">Se presentó un error al procesar la respuesta.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
